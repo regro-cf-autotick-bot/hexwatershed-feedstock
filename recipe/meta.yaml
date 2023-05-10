@@ -11,6 +11,8 @@ source:
 
 build:  
   noarch: python
+  compilers:
+    - cxx
   script:
     - {{ PYTHON }} setup.py build_external 
   number: 0
@@ -19,7 +21,7 @@ requirements:
   build:
     - cmake
     - make
-    - cxx-compiler
+    - compilers
     - python >=3.8    
     - packaging
     - setuptools
