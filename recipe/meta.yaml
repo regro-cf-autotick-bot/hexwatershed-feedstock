@@ -9,24 +9,10 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hexwatershed-{{ version }}.tar.gz
   sha256: df91ded9dd32075c30df7a24300d3a979f78114a2c6d6530115ad8254f16a8f3
 
-build:
+build:  
+  noarch: python
+  script: {{ PYTHON }} setup.py build_external 
   number: 0
-  skip: True  # do not build by default
-
-build:
-  host:
-    platform: linux-64
-  script:
-    - python setup.py build_external 
-  # Build the package for macOS (64-bit)
-  host:
-    platform: osx-64
-  script:
-    - python setup.py build_external 
-  host:
-    platform: win-64
-  script:
-    - python setup.py build_external 
 
 requirements:  
   build:
