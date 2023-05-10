@@ -13,8 +13,21 @@ build:
   noarch: python
   script:
     - python setup.py build_external 
-    - {{ PYTHON }} -m pip install . -vv
   number: 0
+
+output:
+  - name: {{ name|lower }}
+    version: {{ version }}
+    build: 0
+    channel: conda-forge
+    files:
+      - 'pyhexwatershed/_bin'
+      - '*.py'
+      - '*.so'
+      - '*.dll'
+      - '*.dylib'
+      - '*.pyd'
+      - '*.egg-info'
 
 requirements:  
   
