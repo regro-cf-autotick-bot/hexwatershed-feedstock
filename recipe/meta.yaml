@@ -10,6 +10,10 @@ source:
   sha256: df91ded9dd32075c30df7a24300d3a979f78114a2c6d6530115ad8254f16a8f3
 
 build:
+  number: 0
+  skip: True  # do not build by default
+
+build:
   host:
     platform: linux-64
   script:
@@ -24,20 +28,20 @@ build:
   script:
     - python setup.py build_external 
 
-requirements:
+requirements:  
+  build:
+    - python    
+    - packaging
+    - setuptools
   host:
     - linux-64
     - osx-64
     - win-64
-  build:
-    - python    
-    - packaging
-    - setuptool
   run:
     - python
     - packaging
     - numpy
-    - matplotlib
+    - matplotlib-base
     - gdal
     - pyflowline
 
