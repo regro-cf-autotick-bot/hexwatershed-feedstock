@@ -1,5 +1,5 @@
 {% set name = "hexwatershed" %}
-{% set version = "0.2.9" %}
+{% set version = "0.2.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hexwatershed-{{ version }}.tar.gz
-  sha256: da3d57e149183b22373f1117b17ee75efd41ea26b32bcf3f1f5c59665adab9ed
+  sha256: 7239d9d9d9ed3f7bcc1c92adb72c7d6936e1fc8a03f2358d999c64099a43b433
 
 build:  
   noarch: python
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/changliao1025/pyhexwatershed
-  summary: A mesh independent flow direction model for hydrologic models
+  summary: A mesh-independent flow direction model for hydrologic models
   license: BSD-2-Clause
   license_file: LICENSE.md
 
