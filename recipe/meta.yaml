@@ -13,7 +13,7 @@ build:
   noarch: python
   script:
     - python setup.py build_external 
-    - python setup.py
+    - python setup.py install
   number: 0
 
 requirements:  
