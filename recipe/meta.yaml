@@ -13,9 +13,9 @@ build:
   noarch: python
   script:
     - python setup.py build_external 
+    - {{ PYTHON }} -m pip install . -vv
   number: 0
 
-  
 
 requirements:  
   
@@ -26,9 +26,11 @@ requirements:
     - python >=3.8    
     - packaging
     - setuptools
+    - pip
   
   host:
     - python >=3.8  
+    - pip
     - {{ compiler('cxx') }}
  
   run:
