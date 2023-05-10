@@ -14,6 +14,8 @@ build:
   script:
     - {{ PYTHON }} setup.py build_external 
   number: 0
+  c_compiler: gcc
+  cxx_compiler: gxx
 
 requirements:  
   build:
