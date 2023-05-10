@@ -17,9 +17,7 @@ build:
   number: 0
 
 requirements:  
-  host:
-    - python >=3.8  
-    - {{ compiler('cxx') }}
+  
   build:
     - cmake
     - make
@@ -28,6 +26,9 @@ requirements:
     - packaging
     - setuptools
   
+  host:
+    - python >=3.8  
+    - {{ compiler('cxx') }}
  
   run:
     - python >=3.8
