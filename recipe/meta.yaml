@@ -10,21 +10,18 @@ source:
   sha256: df91ded9dd32075c30df7a24300d3a979f78114a2c6d6530115ad8254f16a8f3
 
 build:  
-  noarch: python
+  noarch: python>=3.8
   script: {{ PYTHON }} setup.py build_external 
   number: 0
 
 requirements:  
   build:
-    - python    
+    - python>=3.8    
     - packaging
     - setuptools
-  host:
-    - linux-64
-    - osx-64
-    - win-64
+ 
   run:
-    - python
+    - python>=3.8
     - packaging
     - numpy
     - matplotlib-base
