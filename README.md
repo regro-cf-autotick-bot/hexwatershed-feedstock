@@ -1,11 +1,11 @@
-About hexwatershed
-==================
+About hexwatershed-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hexwatershed-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/changliao1025/pyhexwatershed
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hexwatershed-feedstock/blob/main/LICENSE.txt)
 
 Summary: A mesh independent flow direction model for hydrologic models
 
