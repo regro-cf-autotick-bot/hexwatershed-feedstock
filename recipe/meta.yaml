@@ -19,6 +19,7 @@ requirements:
   build:
     - cmake
     - make
+    - cxx-compiler
     - python >=3.8    
     - packaging
     - setuptools
