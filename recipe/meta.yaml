@@ -13,9 +13,13 @@ build:
   noarch: python
   script:
     - python setup.py build_external 
+    - python setup.py
   number: 0
 
 requirements:  
+  host:
+    - python >=3.8  
+    - {{ compiler('cxx') }}
   build:
     - cmake
     - make
