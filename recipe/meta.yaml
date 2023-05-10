@@ -12,7 +12,7 @@ source:
 build:  
   noarch: python
   script:
-    - {{ PYTHON }} setup.py build_external 
+    - python setup.py build_external 
   number: 0
 
 requirements:  
