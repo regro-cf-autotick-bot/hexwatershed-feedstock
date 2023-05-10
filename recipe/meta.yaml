@@ -4,16 +4,6 @@
 package:
   name: {{ name|lower }}
   version: {{ version }}
-  output:          
-    channel: conda-forge
-    files:
-      - 'pyhexwatershed/_bin'
-      - '*.py'
-      - '*.so'
-      - '*.dll'
-      - '*.dylib'
-      - '*.pyd'
-      - '*.egg-info'
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hexwatershed-{{ version }}.tar.gz
