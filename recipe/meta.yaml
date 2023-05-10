@@ -1,5 +1,5 @@
 {% set name = "hexwatershed" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hexwatershed-{{ version }}.tar.gz
-  sha256: 2ffa34977c40ae23eda7cfe15fe384128f9bf3e0ca5bdb2a0bf761a7828901a5
+  sha256: 32ac0c3946a6866532102bce7d6f7bb0671f13f211f1cf537089968e9277ad44
 
 build:  
   noarch: python
@@ -22,7 +22,6 @@ requirements:
  
   run:
     - python >=3.8
-    - packaging
     - numpy
     - matplotlib-base
     - gdal
