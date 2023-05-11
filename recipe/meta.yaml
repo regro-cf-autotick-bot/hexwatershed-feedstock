@@ -1,5 +1,5 @@
 {% set name = "hexwatershed" %}
-{% set version = "0.2.20" %}
+{% set version = "0.2.23" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hexwatershed-{{ version }}.tar.gz
-  sha256: 611004c119186486de2e48c038f6cc0ca986c9bc6420d051b2a6cdea071b28f0
+  sha256: 1762d7c8dc7c036e49fde20df83746a0619f195c6c624f4dc639dd4b7f40a663
 
 build:  
   noarch: python
