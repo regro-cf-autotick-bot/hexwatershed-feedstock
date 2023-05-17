@@ -1,19 +1,22 @@
 {% set name = "hexwatershed" %}
-{% set version = "0.2.23" %}
+{% set version = "0.2.24" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hexwatershed-{{ version }}.tar.gz
-  sha256: 1762d7c8dc7c036e49fde20df83746a0619f195c6c624f4dc639dd4b7f40a663
+  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hexwatershed-{{ version }}.tar.gz
+  #sha256: 1762d7c8dc7c036e49fde20df83746a0619f195c6c624f4dc639dd4b7f40a663
+  git_rev: v0.2.24
+  git_url: https://github.com/changliao1025/pyhexwatershed
 
 build:  
   noarch: python
   script:
-    - python setup.py build_external 
-    - {{ PYTHON }} -m pip install . -vv
+    - pip install . 
+    - python setup.py build_external -vv
+    
   number: 0
 
 
