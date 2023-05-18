@@ -16,7 +16,6 @@ build_string: py38_0
 test:
   imports:
     - pyhexwatershed
-  
 
 # Define the package metadata
 metadata:
@@ -46,4 +45,3 @@ metadata:
     - python
     - setuptools
     - pip
-    
