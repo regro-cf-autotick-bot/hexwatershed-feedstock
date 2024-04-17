@@ -1,13 +1,10 @@
 {% set name = "hexwatershed" %}
 {% set git_rev = "main" %}
-{% set version = "0.2.25" %}
+{% set version = "0.2.28" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 source:
-  #path: $RECIPE_DIR/../..
-  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hexwatershed-{{ version }}.tar.gz
-  #sha256: 1762d7c8dc7c036e49fde20df83746a0619f195c6c624f4dc639dd4b7f40a663
   git_rev: {{ git_rev }}
   git_url: https://github.com/changliao1025/pyhexwatershed
 build:  
@@ -37,7 +34,7 @@ test:
 about:
   home: https://github.com/changliao1025/pyhexwatershed
   summary: A mesh-independent flow direction model for hydrologic models
-  license: BSD-2-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.md
 extra:
   recipe-maintainers:
